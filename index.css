@@ -1,0 +1,187 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+.form-container{
+    padding: 9px;
+    padding-top: 0px;
+    height: 500px;
+}
+
+.right-col{
+    width: 63%;
+    float: right;
+    padding-right: 0px;
+    
+}
+
+
+.form-container.left-col{
+    background-image: url("hat.jpg");
+    background-size: cover;
+    width: 36%;
+    height:826px;
+    background-repeat: no-repeat;
+    padding-left: 6px;
+    position: relative;
+    
+}
+
+.text{
+    position: absolute;
+    margin: auto;
+    background-color: rgba(209, 208, 208, 0.2);
+    margin-top: 350px;
+    width: 97%;
+    height: 90px;
+    padding-left: -40px;
+    
+}
+
+img{
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-left:2px;
+    margin-top: 355px;
+    padding-top: -40px;
+    position: absolute;
+    
+}
+.title{
+    text-align: center;
+    margin-top: 5px;
+    font-family: norse;
+    font-size: 40px;
+    position: relative;
+    margin-left: 35px;
+}
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 70px;
+    margin-top: -25px;
+    
+}
+
+input{
+    width: 120%;
+    margin-right: 4px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(244, 246, 246);
+    border: 1px solid;
+}
+
+label{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+input:focus{
+    outline: none;
+    border: 2px solid  rgb(88, 145, 211);
+    
+}
+
+
+.contents{
+    background-color: rgb(238, 230, 221);;
+    height: 300px;
+}
+
+.header{
+    padding-top: 150px;
+    padding-left: 70px;
+    font-size: 23px;
+    font-family: roboto;
+    text-overflow: hidden;
+}
+
+.header2{
+    font-family: roboto;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.form{
+    padding-left: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    margin-top: 65px;
+    
+
+}
+
+
+button{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white;
+}
+
+button:hover{
+    background-color:  rgb(243, 231, 219);
+}
+p{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.bg{
+    background-color:  rgb(238, 230, 221);
+    margin-top: 15px;
+    height: 211px;
+}
+
+
+@media only screen and (max-width: 613px) {
+    .contents{
+        height: 400px;
+        max-width: 350px;
+       
+    }
+    .header{
+        padding-top: 20px;
+    }
+
+    .form-container.left-col{
+        width: 39%;
+        height: 1185px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    img{
+        width: 33px;
+        height: auto;
+        display: inline-block;
+        margin-left:2px;
+        margin-top: 355px;
+        padding-top: -40px;
+        position: absolute;
+        
+    }
+
+    button{
+        width: 100px;
+    }
+}
